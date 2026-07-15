@@ -359,14 +359,61 @@ python training/train.py
 
 ## 📸 Screenshot
 
-### Tab Deteksi Gambar
-Unggah gambar untuk mendapatkan deteksi APD instan beserta statistik dan laporan AI.
+Berikut adalah tampilan visual sistem monitoring saat mendeteksi pekerja dan memproses gambar serta video:
 
-### Tab Deteksi Video
-Unggah video CCTV untuk analisis keselamatan menyeluruh termasuk timeline alert dan object tracking.
+### A. Fitur Deteksi Gambar (Image Detection)
 
-### Tab Galeri Pelanggaran
-Galeri snapshot semua pelanggaran yang tercatat selama pemrosesan video, dikelompokkan per jenis pelanggaran.
+#### 1. Unggah Gambar & Input Preview
+Menu untuk mengunggah gambar (`.jpg` atau `.png`) untuk diproses oleh sistem.
+![Upload Image & Input](docs/screenshots/1_image_detection_input.png)
+
+#### 2. Output Gambar Deteksi (YOLOv8 & Bounding Box)
+Hasil proses deteksi dengan anotasi status kepatuhan APD (`SAFE`, `NO_HELMET`, atau `NO_SAFETY_VEST`) beserta koordinat bounding box.
+![Output Image Deteksi](docs/screenshots/2_image_detection_output.png)
+
+#### 3. Statistik Objek Terdeteksi & Ringkasan Laporan AI (Bagian 1)
+Menunjukkan jumlah person, helmet, safety vest, kendaraan, dan api/asap beserta ringkasan awal laporan.
+![Statistik & Laporan AI Bagian 1](docs/screenshots/3_ai_report_part1.png)
+
+#### 4. Persentase Kepatuhan APD & Penilaian Risiko (Bagian 2)
+Tabel kepatuhan kerja dan analisa tingkat risiko berdasarkan status pekerja.
+![Laporan AI Bagian 2](docs/screenshots/4_ai_report_part2.png)
+
+#### 5. Rekomendasi Keselamatan Kerja dari AI (Bagian 3)
+Rekomendasi taktis dan operasional yang diberikan secara otomatis oleh sistem kepada petugas safety supervisor.
+![Laporan AI Bagian 3](docs/screenshots/5_ai_report_part3.png)
+
+---
+
+### B. Fitur Deteksi Video (Video Detection)
+
+#### 1. Unggah Video & Input Preview
+Menu untuk mengunggah rekaman video CCTV (`.mp4`) untuk diproses frame-by-frame.
+![Upload Video & Input](docs/screenshots/6_video_detection_input.png)
+
+#### 2. Hasil Deteksi & Tracking Video (Output Video)
+Menampilkan video terproses dengan tracker visual (ByteTrack) yang memberikan ID konstan pada pekerja beserta bounding box yang menunjukkan status APD secara real-time.
+![Output Video Deteksi](docs/screenshots/7_video_detection_output.png)
+
+#### 3. Timeline Alert & Status Kepatuhan Pekerja
+Kronologi peringatan pelanggaran detail per detik beserta tabel list ID pekerja beserta status akhir kepatuhan mereka.
+![Timeline Alert & Status](docs/screenshots/8_video_timeline_status.png)
+
+#### 4. Total Statistik Maksimum Objek per Frame
+Grafik statistik tertinggi dari objek yang terdeteksi secara bersamaan di dalam satu frame.
+![Object Count Video](docs/screenshots/9_video_object_count.png)
+
+#### 5. Laporan Keselamatan AI dari Rekaman Video — Bagian 1 (Ringkasan & Persentase)
+Laporan evaluasi keselamatan dan kepatuhan APD berdasarkan rekaman video yang dianalisa oleh LLM.
+![Laporan AI Video Bagian 1](docs/screenshots/10_video_ai_report.png.png)
+
+#### 6. Laporan Keselamatan AI dari Rekaman Video — Bagian 2 (Penilaian Risiko)
+Penilaian tingkat risiko keselamatan pekerja di lapangan berdasarkan hasil analisis video.
+![Laporan AI Video Bagian 2](docs/screenshots/11_video_ai_report.png)
+
+#### 7. Laporan Keselamatan AI dari Rekaman Video — Bagian 3 (Rekomendasi)
+Rekomendasi tindakan korektif yang diberikan oleh LLM kepada tim safety supervisor.
+![Laporan AI Video Bagian 3](docs/screenshots/12_video_ai_report.png)
 
 ---
 
