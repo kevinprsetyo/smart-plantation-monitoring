@@ -415,9 +415,3 @@ Penilaian tingkat risiko keselamatan pekerja di lapangan berdasarkan hasil anali
 Rekomendasi tindakan korektif yang diberikan oleh LLM kepada tim safety supervisor.
 ![Laporan AI Video Bagian 3](docs/screenshots/12_video_ai_report.png)
 
-
-
-
-**Kevin Prasetyo**
-
-- GitHub: [@kevinprsetyo](https://github.com/kevinprsetyo)
