@@ -1,10 +1,10 @@
-# 🌿 Smart Plantation Safety Monitoring System
+# Smart Plantation Safety Monitoring System
 
 Sistem monitoring keselamatan kerja berbasis AI untuk area perkebunan menggunakan **YOLOv8** dan **ByteTrack**. Sistem ini mendeteksi pelanggaran APD (Alat Pelindung Diri) seperti helm dan rompi keselamatan, serta mendeteksi bahaya kebakaran dan asap secara real-time dari gambar maupun video CCTV.
 
 ---
 
-## 📋 Daftar Isi
+##  Daftar Isi
 
 - [Fitur Utama](#-fitur-utama)
 - [Arsitektur Sistem](#-arsitektur-sistem)
@@ -22,23 +22,23 @@ Sistem monitoring keselamatan kerja berbasis AI untuk area perkebunan menggunaka
 
 ---
 
-## ✨ Fitur Utama
+## Fitur Utama
 
 | Fitur | Deskripsi |
 |---|---|
-| 🎯 **Deteksi APD** | Mendeteksi keberadaan helm dan rompi keselamatan pada setiap pekerja |
-| 🔥 **Deteksi Kebakaran & Asap** | Mengenali api dan asap secara otomatis pada frame video/gambar |
-| 🎬 **Pemrosesan Video** | Analisis video frame-by-frame dengan anotasi bounding box berwarna |
-| 🖼️ **Deteksi Gambar** | Upload dan proses gambar statis untuk deteksi PPE instan |
-| 📊 **Statistik Real-time** | Menampilkan statistik kepatuhan APD, jumlah objek, dan status keselamatan |
-| 🤖 **AI Safety Report** | Laporan keselamatan otomatis yang dihasilkan oleh LLM (Ollama Cloud) |
-| 📸 **Galeri Pelanggaran** | Menyimpan snapshot frame yang mengandung pelanggaran untuk dokumentasi |
-| ⏱️ **Timeline Alert** | Mencatat kronologi perubahan status pelanggaran selama durasi video |
-| 🔍 **Object Tracking** | Pelacakan objek antar frame menggunakan algoritma ByteTrack |
+| **Deteksi APD** | Mendeteksi keberadaan helm dan rompi keselamatan pada setiap pekerja |
+| **Deteksi Kebakaran & Asap** | Mengenali api dan asap secara otomatis pada frame video/gambar |
+|  **Pemrosesan Video** | Analisis video frame-by-frame dengan anotasi bounding box berwarna |
+|  **Deteksi Gambar** | Upload dan proses gambar statis untuk deteksi PPE instan |
+|  **Statistik Real-time** | Menampilkan statistik kepatuhan APD, jumlah objek, dan status keselamatan |
+|  **AI Safety Report** | Laporan keselamatan otomatis yang dihasilkan oleh LLM (Ollama Cloud) |
+|  **Galeri Pelanggaran** | Menyimpan snapshot frame yang mengandung pelanggaran untuk dokumentasi |
+|  **Timeline Alert** | Mencatat kronologi perubahan status pelanggaran selama durasi video |
+|  **Object Tracking** | Pelacakan objek antar frame menggunakan algoritma ByteTrack |
 
 ---
 
-## 🏗️ Arsitektur Sistem
+##  Arsitektur Sistem
 
 ```
 ┌──────────────────────────────┐
@@ -80,7 +80,7 @@ Sistem monitoring keselamatan kerja berbasis AI untuk area perkebunan menggunaka
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+##  Teknologi yang Digunakan
 
 | Kategori | Teknologi |
 |---|---|
@@ -95,7 +95,7 @@ Sistem monitoring keselamatan kerja berbasis AI untuk area perkebunan menggunaka
 
 ---
 
-## 📁 Struktur Proyek
+##  Struktur Proyek
 
 ```
 smart-plantation-monitoring/
@@ -140,7 +140,7 @@ smart-plantation-monitoring/
 
 ---
 
-## 📌 Prasyarat
+##  Prasyarat
 
 Pastikan perangkat Anda sudah memiliki:
 
@@ -153,7 +153,7 @@ Pastikan perangkat Anda sudah memiliki:
 
 ---
 
-## ⚙️ Instalasi
+##  Instalasi
 
 ### 1. Clone Repository
 
@@ -192,7 +192,7 @@ backend/models/best.pt
 
 ---
 
-## 🔧 Konfigurasi
+##  Konfigurasi
 
 ### Environment Variables
 
@@ -212,7 +212,7 @@ OLLAMA_API_KEY=your_api_key_here
 
 ---
 
-## 🚀 Cara Menjalankan
+##  Cara Menjalankan
 
 ### 1. Jalankan Backend (FastAPI)
 
@@ -236,7 +236,7 @@ Dashboard akan terbuka otomatis di browser (default: `http://localhost:8501`)
 
 ---
 
-## 📡 Endpoint API
+##  Endpoint API
 
 | Method | Endpoint | Deskripsi |
 |---|---|---|
@@ -272,7 +272,7 @@ Dashboard akan terbuka otomatis di browser (default: `http://localhost:8501`)
 
 ---
 
-## 🏷️ Kelas Deteksi
+##  Kelas Deteksi
 
 Model YOLOv8 dilatih untuk mendeteksi **8 kelas objek**:
 
@@ -289,7 +289,7 @@ Model YOLOv8 dilatih untuk mendeteksi **8 kelas objek**:
 
 ---
 
-## 🔄 Pipeline Pemrosesan
+## Pipeline Pemrosesan
 
 ### Deteksi Gambar
 ```
@@ -317,7 +317,7 @@ Upload Video → Baca Frame → Deteksi per Frame → Tracking → Cek Pelanggar
 
 ---
 
-## 🏋️ Training Model
+##  Training Model
 
 ### Persiapan Dataset
 
@@ -357,7 +357,7 @@ python training/train.py
 
 ---
 
-## 📸 Screenshot
+##  Screenshot
 
 Berikut adalah tampilan visual sistem monitoring saat mendeteksi pekerja dan memproses gambar serta video:
 
@@ -417,13 +417,13 @@ Rekomendasi tindakan korektif yang diberikan oleh LLM kepada tim safety supervis
 
 ---
 
-## 📄 Lisensi
+##  Lisensi
 
 Proyek ini dibuat untuk keperluan portofolio dan pembelajaran.
 
 ---
 
-## 👤 Penulis
+## Penulis
 
 **Kevin Prasetyo**
 
