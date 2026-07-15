@@ -20,9 +20,11 @@ runs/
 # Weights
 *.pt
 
-# Images
+# Images (kecuali screenshot dokumentasi)
 *.jpg
 *.png
+!docs/screenshots/*.png
+!docs/screenshots/*.jpg
 
 # VSCode
 .vscode/
