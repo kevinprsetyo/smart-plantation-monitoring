@@ -405,7 +405,7 @@ Grafik statistik tertinggi dari objek yang terdeteksi secara bersamaan di dalam 
 
 #### 5. Laporan Keselamatan AI dari Rekaman Video — Bagian 1 (Ringkasan & Persentase)
 Laporan evaluasi keselamatan dan kepatuhan APD berdasarkan rekaman video yang dianalisa oleh LLM.
-![Laporan AI Video Bagian 1](docs/screenshots/10_video_ai_report.png.png)
+![Laporan AI Video Bagian 1](docs/screenshots/10_video_ai_report.png)
 
 #### 6. Laporan Keselamatan AI dari Rekaman Video — Bagian 2 (Penilaian Risiko)
 Penilaian tingkat risiko keselamatan pekerja di lapangan berdasarkan hasil analisis video.
