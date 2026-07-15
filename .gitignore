@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+
+# Environment variables (API keys — jangan di-commit!)
+.env
+
+# Virtual env
+venv/
+
+# Dataset
+datasets/
+
+# Trained model
+models/
+
+# YOLO runs
+runs/
+
+# Weights
+*.pt
+
+# Images
+*.jpg
+*.png
+
+# VSCode
+.vscode/
+
+# Notebook checkpoint
+.ipynb_checkpoints/
+
+# Logs
+*.log
